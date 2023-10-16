@@ -1,9 +1,12 @@
-Feature: Je souhaite tester l application Bouletcorp
-  En tant que utilisateur je souhaite tester l application Bouletcorp
+#language: fr
 
-  @aPropos
-  Scenario: Je souhaite tester le bouton a propos de l application Bouletcorp
-  Given Je me connecte a l application Bouletcorp
-  When Je clique sur le bouton a propos 
-  Then Je me redirige vers la page a propos "https://bouletcorp.com/buttons/twitch.png" "https://bouletcorp.com/buttons/masto.png" "https://bouletcorp.com/buttons/insta.png" s affiche
+Fonctionnalité: Je souhaite tester l application Bouletcorp
+
+
+  @bouletcorp
+  Scénario: Je souhaite tester le changement de la page et l affichage des widgets sur le site
+  Etant donnée Je me rends sur le site Bouletcops "bouletcorp.url"
+  Quand Je clique sur l onglet Apropos 
+  Alors La page est changée
+  Et Les widgets twitch masto et insta sont bien affichés
  
