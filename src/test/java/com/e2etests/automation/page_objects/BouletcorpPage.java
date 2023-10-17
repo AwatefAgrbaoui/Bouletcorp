@@ -32,19 +32,20 @@ public class BouletcorpPage {
 	}
 	/* Create Method */
 	
-	public void clickOnBtn() {
-		aProposBtn.click();
-	}
-	public void checkUrlChanged() {
-		String actualUrl = Setup.getDriver().getCurrentUrl();
-		System.out.println("Title of the page: "+actualUrl);
-		String url = configFileReader.getProperties("bouletcorp.url");
-		if (actualUrl.equals(url)) {
-			System.out.println(" Failed: the url is not changed");		
-		}
-		else {
-			System.out.println(" Succed: the url is changed");		
+//	public void clickOnBtn() {
+//		aProposBtn.click();
+//	}
+//	public void checkUrlChanged() {
+//		String actualUrl = Setup.getDriver().getCurrentUrl();
+//		System.out.println("Title of the page: "+actualUrl);
+//		String url = configFileReader.getProperties("bouletcorp.url");
+//		if (actualUrl.equals(url)) {
+//			System.out.println(" Failed: the url is not changed");		
+//		}
+//		else {
+//			System.out.println(" Succed: the url is changed");		
+//
+//		}	
+//	}
 
-		}	
-	}
 }
